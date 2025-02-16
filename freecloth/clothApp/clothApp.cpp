@@ -48,7 +48,7 @@ namespace {
 class ClothAppArgs
 {
 public:
-    ClothAppArgs( int argc, const char** argv );
+    ClothAppArgs( int argc, char** argv );
 
     void printSyntax();
 
@@ -72,6 +72,8 @@ public:
     UInt32 _cropL, _cropB, _cropW, _cropH;
 
     bool _error;
+    int _argc;
+    char** _argv;
 
 private:
     template <class InputIterator>
@@ -81,7 +83,7 @@ private:
 
 //------------------------------------------------------------------------------
 
-ClothAppArgs::ClothAppArgs( int argc, const char** argv )
+ClothAppArgs::ClothAppArgs( int argc, char** argv )
   : _settings( "" ),
     _snapPrefix( "" ),
     _statsPrefix( "" ),
@@ -95,7 +97,9 @@ ClothAppArgs::ClothAppArgs( int argc, const char** argv )
     _stretchLimit( 0.01f ),
     _constraint( ClothApp::CON_CORNERS3b ),
     _batchFlag( false ),
-    _crop( false )
+    _crop( false ),
+    _argc(argc),
+    _argv(argv)
 {
     parseArgs( argv + 1, argv + argc );
 }
@@ -402,7 +406,7 @@ ClothApp::ClothApp( const ClothAppArgs& args )
 {
     setupMesh();
 
-    loadSettings( args._settings );
+    loadSettings( args._settings, args._argc, args._argv ); 
     _glWindow->setRadioGroup(
         ID_STEP_STRATEGY, args._adaptive ? STEP_ADAPTIVE : STEP_BASIC
     );
@@ -479,7 +483,7 @@ void ClothApp::saveSettings( const String& filename ) const
 
 //------------------------------------------------------------------------------
 
-void ClothApp::loadSettings( const String& filename )
+void ClothApp::loadSettings( const String& filename, int argc, char** argv )
 {
     ClothAppConfig config;
     if ( filename.length() > 0 ) {
@@ -487,7 +491,7 @@ void ClothApp::loadSettings( const String& filename )
         config.load( reg );
     }
     // FIXME: need way to load window size settings after startup
-    setupWindow( config );
+    setupWindow( config, argc, argv );
 
     _glWindow->setRotate( ID_CAMERA_ROTATE, config.getCameraRotate() );
     _glWindow->setTranslateZ( ID_ZOOM, config.getCameraZoom() );
@@ -646,11 +650,11 @@ void ClothApp::setConstraints()
 
 //------------------------------------------------------------------------------
 
-void ClothApp::setupWindow( const GfxConfig& config )
+void ClothApp::setupWindow( const GfxConfig& config, int argc, char** argv )
 {
     // Create GL window, monitor for events
     _glWindow = RCShdPtr<GfxGLWindowGLUI>( new GfxGLWindowGLUI(
-        config, "Cloth test app"
+        config, "Cloth test app", argc, argv
     ) );
     _glWindow->addObserver( *this );
     _glWindow->enableIdleEvents( true );
@@ -1041,7 +1045,7 @@ void ClothApp::uiReceived( GfxWindow&, UInt32 uid )
         } break;
 
         case ID_SETTINGS_LOAD: {
-            loadSettings( _glWindow->getEditText( ID_SETTINGS_FILENAME ) );
+            loadSettings( _glWindow->getEditText( ID_SETTINGS_FILENAME ), argc, argv );
             _glWindow->postRedisplay();
         } break;
 
@@ -1793,12 +1797,13 @@ void ClothApp::windowResized(
 
 //------------------------------------------------------------------------------
 
-int main( int argc, const char** argv )
+int main( int argc, char** argv )
 {
     ClothAppArgs args( argc, argv );
     if ( args._error ) {
         return 1;
     }
+    
     ClothApp app( args );
     app.runApp();
     return 0;

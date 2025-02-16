@@ -98,10 +98,16 @@ public:
 
         NB_CONSTRAINTS
     };
-    
+    ClothApp(int argc, char** argv): argc(argc), argv(argv) {
+
+    }
+
     // ----- member functions -----
     explicit ClothApp( const ClothAppArgs& );
     void runApp();
+
+    int argc;
+    char** argv;
 
 protected:
     // ----- member functions -----
@@ -112,7 +118,7 @@ protected:
     void uiReceived( GfxWindow&, UInt32 uid );
     void idleReceived();
 
-    void loadSettings( const String& filename );
+    void loadSettings( const String& filename, int argc, char** argv );
     void saveSettings( const String& filename ) const;
     void render( bool debug_stretch, bool debug_shear, bool debug_bend );
     void snap( bool debug );
@@ -208,7 +214,7 @@ private:
     void setupSimulator();
     void setupStepper();
     void setConstraints();
-    void setupWindow( const GfxConfig& config );
+    void setupWindow( const GfxConfig& config, int argc, char** argv );
     void initGL();
     void calcNormals();
     void renderCloth();

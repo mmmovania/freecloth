@@ -15,10 +15,10 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with this program; if not, write to the Free Software
 // Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-
+ 
 #include <freecloth/base/baMath.h>
 #include <freecloth/base/debug.h>
-#include <freecloth/base/algorithm>
+#include <freecloth/base/algorithm> 
 
 FREECLOTH_NAMESPACE_START
 

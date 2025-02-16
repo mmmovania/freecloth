@@ -1,0 +1,62 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (clothApp.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  baMath.cpp
+  baStringUtil.cpp
+  baTimeWindows.cpp
+  baTraceEntry.cpp
+  baTraceStream.cpp
+  geMatrix3.cpp
+  geMatrix4.cpp
+  geMesh.cpp
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(38,25): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(66,28): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(124,35): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+  geMeshBuilder.cpp
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(38,25): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(66,28): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(124,35): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+  geMeshWingedEdge.cpp
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(38,25): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(66,28): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(124,35): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMeshWingedEdge.inline.h(32,29): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+  gePoint.cpp
+  geVector.cpp
+  rcBase.cpp
+  rcProxyShdPtr.cpp
+  rcShdPtr.cpp
+  resConfigRegistry.cpp
+  resConfigRegistryFile.cpp
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\resmgt\resConfigRegistryFile.cpp(72,45): warning C4267: 'initializing': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\resmgt\resConfigRegistryFile.cpp(78,75): warning C4267: '=': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\resmgt\resConfigRegistryFile.cpp(82,76): warning C4267: '=': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+  resConfigRegistryWindows.cpp
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\resmgt\resConfigRegistryWindows.cpp(101,5): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+  simMatrix.cpp
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\simulator\simVector.inline.h(82,24): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\simulator\simMatrix.cpp(73,20): warning C4244: 'initializing': conversion from '__int64' to 'freecloth::UInt32', possible loss of data
+  simSimulator.cpp
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\simulator\simVector.inline.h(82,24): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(38,25): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(66,28): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(124,35): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMeshWingedEdge.inline.h(32,29): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+  Generating Code...
+  Compiling...
+  simStepStrategy.cpp
+  simStepStrategyAdaptive.cpp
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\simulator\simVector.inline.h(82,24): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(38,25): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(66,28): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(124,35): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMeshWingedEdge.inline.h(32,29): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+  simStepStrategyBasic.cpp
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\simulator\simVector.inline.h(82,24): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(38,25): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(66,28): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(124,35): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMeshWingedEdge.inline.h(32,29): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+  simVector.cpp
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\simulator\simVector.inline.h(82,24): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1545,5): warning MSB8012: TargetPath(E:\Codes\Cloth\freecloth-0.7.1\freecloth\x64\Release\freecloth.lib) does not match the Library's OutputFile property value (E:\Codes\Cloth\freecloth-0.7.1\freecloth\Release\freecloth.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  freecloth.vcxproj -> E:\Codes\Cloth\freecloth-0.7.1\freecloth\x64\Release\freecloth.lib

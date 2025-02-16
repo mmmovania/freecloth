@@ -82,9 +82,13 @@ public:
 
     GfxGLWindowGLUI(
         const GfxConfig&,
-        const String& title
+        const String& title,
+        int argc, 
+        char** argv
     );
     ~GfxGLWindowGLUI();
+
+    
 
     // Add UI controls
     void addGroup( BorderType, PanelID, PanelID parent = PANEL_NONE );

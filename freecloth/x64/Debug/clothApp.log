@@ -1,0 +1,14 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (freecloth.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  clothApp.cpp
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\simulator\simVector.inline.h(82,24): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(38,25): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(66,28): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMesh.inline.h(124,35): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\geom\geMeshWingedEdge.inline.h(32,29): warning C4267: 'return': conversion from 'size_t' to 'freecloth::UInt32', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\clothApp\clothApp.cpp(1268,44): warning C4244: 'argument': conversion from 'freecloth::UInt32' to 'freecloth::Float', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\clothApp\clothApp.cpp(1329,9): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\clothApp\clothApp.cpp(1545,25): warning C4244: 'argument': conversion from 'freecloth::UInt32' to 'GLfloat', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\clothApp\clothApp.cpp(1547,28): warning C4244: 'argument': conversion from 'freecloth::UInt32' to 'GLfloat', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\clothApp\clothApp.cpp(1547,25): warning C4244: 'argument': conversion from 'freecloth::UInt32' to 'GLfloat', possible loss of data
+E:\Codes\Cloth\freecloth-0.7.1\freecloth\clothApp\clothApp.cpp(1549,28): warning C4244: 'argument': conversion from 'freecloth::UInt32' to 'GLfloat', possible loss of data
+  clothApp.vcxproj -> E:\Codes\Cloth\freecloth-0.7.1\freecloth\x64\Debug\clothApp.exe

@@ -1,0 +1,15 @@
+// debug_trace.txt  
+
+| 1
+\ GfxImageReaderPNM::readImage()
+  | path = marble.ppm
+/ 
+\ GfxImageReaderPNM::readImage()
+  | path = clothApp/marble.ppm
+/ 
+\ GfxImageReaderPNM::readImage()
+  | path = checker3.ppm
+/ 
+\ GfxImageReaderPNM::readImage()
+  | path = clothApp/checker3.ppm
+/ 

@@ -104,7 +104,7 @@ UInt32 ResConfigRegistryR::readUInt32(
 
     if ( hasKey( key ) ) {
         String s = readString( key );
-        ::sscanf( s.c_str(), "%d", &result );
+        ::sscanf_s( s.c_str(), "%d", &result );
     }
     return result;
 }
@@ -119,7 +119,7 @@ Float ResConfigRegistryR::readFloat(
 
     if ( hasKey( key ) ) {
         String s = readString( key );
-        ::sscanf( s.c_str(), "%f", &result );
+        ::sscanf_s( s.c_str(), "%f", &result );
     }
     return result;
 }

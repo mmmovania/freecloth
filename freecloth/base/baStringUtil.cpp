@@ -59,7 +59,7 @@ String BaStringUtil::toUpper( const String& s )
 
 Float BaStringUtil::toFloat( const String& s )
 {
-    return ::atof( s.c_str() );
+    return static_cast<Float>(::atof( s.c_str() ));
 } 
 
 //------------------------------------------------------------------------------
@@ -110,7 +110,7 @@ String BaStringUtil::fromUInt32( UInt32 n, UInt32 zeroPad )
 String BaStringUtil::fromFloat( Float n )
 {
     char buf[ 64 ];
-    ::sprintf( buf, "%f", n );
+    ::sprintf_s( buf, "%f", n );
     return String( buf );
 }
 
@@ -120,7 +120,7 @@ String BaStringUtil::fromFloat( Float n, UInt32 nbFracDigits )
 {
     String fmt( "%." + fromUInt32( nbFracDigits ) + "f" );
     char buf[ 64 ];
-    ::sprintf( buf, fmt.c_str(), n );
+    ::sprintf_s( buf, fmt.c_str(), n );
     return String( buf );
 }
 

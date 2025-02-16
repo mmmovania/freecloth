@@ -23,7 +23,7 @@ FREECLOTH_NAMESPACE_START
 ////////////////////////////////////////////////////////////////////////////////
 // TEMPLATE INSTANTIATIONS
 
-class RCProxyShdPtr<UInt8>;
-class RCProxyShdPtr<UInt32>;
+template <> class RCProxyShdPtr<UInt8>;
+template <> class RCProxyShdPtr<UInt32>;
 
 FREECLOTH_NAMESPACE_END

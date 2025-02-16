@@ -53,7 +53,9 @@ public:
 
     GfxGLWindowGLUT(
         const GfxConfig&,
-        const String& title
+        const String& title,
+        int argc,
+        char** argv
     );
     ~GfxGLWindowGLUT();
 

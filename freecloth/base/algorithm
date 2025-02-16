@@ -27,7 +27,7 @@
 // and redefine std::min and std::max.
 
 namespace std {
-
+	/*
 template<class _Ty> inline
 	const _Ty& max(const _Ty& _X, const _Ty& _Y)
 	{return _cpp_max( _X, _Y ); }
@@ -43,7 +43,7 @@ template<class _Ty> inline
 template<class _Ty, class _Pr> inline
 	const _Ty& min(const _Ty& _X, const _Ty& _Y, _Pr _P)
 	{return _cpp_min( _X, _Y, _P ); }
-
+	*/
 }
 #endif
 

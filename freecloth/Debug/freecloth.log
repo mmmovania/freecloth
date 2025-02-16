@@ -1,0 +1,29 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (.\Debug\) contains files shared from another project (clothApp.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  baMath.cpp
+  baStringUtil.cpp
+  baTimeWindows.cpp
+  baTraceEntry.cpp
+  baTraceStream.cpp
+  geMatrix3.cpp
+  geMatrix4.cpp
+  geMesh.cpp
+  geMeshBuilder.cpp
+  geMeshWingedEdge.cpp
+  gePoint.cpp
+  geVector.cpp
+  rcBase.cpp
+  rcProxyShdPtr.cpp
+  rcShdPtr.cpp
+  resConfigRegistry.cpp
+  resConfigRegistryFile.cpp
+  resConfigRegistryWindows.cpp
+  simMatrix.cpp
+  simSimulator.cpp
+  Generating Code...
+  Compiling...
+  simStepStrategy.cpp
+  simStepStrategyAdaptive.cpp
+  simStepStrategyBasic.cpp
+  simVector.cpp
+  Generating Code...
+  freecloth.vcxproj -> E:\Codes\Cloth\freecloth-0.7.1\freecloth\Debug\freecloth.lib

@@ -27,6 +27,6 @@
 #include <freecloth/base/GL_glut.h>
 #endif
 
-#include <glui.h>
+#include <GL/glui.h>
 
 #endif

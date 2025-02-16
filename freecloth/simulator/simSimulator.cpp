@@ -472,7 +472,7 @@ void SimSimulator::postSubStepsFinale()
         _sd._fenergy[ i ] = 0;
     }
 
-     _sd._venergy = .5 * _sd._v0.dot( _M * _sd._v0 );
+     _sd._venergy = .5f * _sd._v0.dot( _M * _sd._v0 );
 
     // Clear all forces
     _sd._f0.clear();
@@ -1063,7 +1063,7 @@ void SimSimulator::calcStretch(
     }
 
     Float E =
-        _params._k_stretch * .5 * ( stv._Cu * stv._Cu + stv._Cv * stv._Cv );
+        _params._k_stretch * .5f * ( stv._Cu * stv._Cu + stv._Cv * stv._Cv );
     _sd._trienergy[ F_STRETCH ][ face.getFaceId() ] = E;
     _sd._Cu[ face.getFaceId() ] = stv._Cu / fc._alpha;
     _sd._Cv[ face.getFaceId() ] = stv._Cv / fc._alpha;
@@ -1143,7 +1143,7 @@ void SimSimulator::calcShear(
         }
     }
 
-    Float E = _params._k_shear * .5 * shv._C * shv._C;
+    Float E = _params._k_shear * .5f * shv._C * shv._C;
     _sd._trienergy[ F_SHEAR ][ face.getFaceId() ] = E;
     _sd._fenergy[ F_SHEAR ] += E;
 
@@ -1218,10 +1218,10 @@ void SimSimulator::calcBend(
         }
     }
 
-    Float E = .5 * k * bv._C * bv._C;
+    Float E = .5f * k * bv._C * bv._C;
     // Spread energy to both triangles for debugging
-    _sd._trienergy[ F_BEND ][ edge.getFaceId() ] += E * .5;
-    _sd._trienergy[ F_BEND ][ he_twin.getFaceId() ] += E * .5;
+    _sd._trienergy[ F_BEND ][ edge.getFaceId() ] += E * .5f;
+    _sd._trienergy[ F_BEND ][ he_twin.getFaceId() ] += E * .5f;
     _sd._fenergy[ F_BEND ] += E;
 
     for ( m = 0; m < 4; ++m ) for ( n = 0; n < 4; ++n ) {
@@ -1757,7 +1757,7 @@ void SimSimulator::FaceConsts::calc( const GePoint_3 tp )
     // $ a = \frac{1}{2} \norm{
     //          \begin{pmatrix} \du_1 \\ \dv_1 \\ 0 \end{pmatrix} \cross
     //          \begin{pmatrix} \du_2 \\ \dv_2 \\ 0 \end{pmatrix} } $
-    _alpha = .5 * ( tp[ 1 ] - tp[ 0 ] ).cross( tp[ 2 ] - tp[ 0 ] ).length();
+    _alpha = .5f * ( tp[ 1 ] - tp[ 0 ] ).cross( tp[ 2 ] - tp[ 0 ] ).length();
 
 #if DO_SCALE_INVARIANT
     // _alpha = _alpha ^ 3/4

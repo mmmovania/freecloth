@@ -31,10 +31,14 @@ UInt32 GfxGLWindowGLUT::_nbIdleRegistered = 0;
 
 GfxGLWindowGLUT::GfxGLWindowGLUT(
     const GfxConfig& config,
-    const String& title
+    const String& title,
+    int argc, 
+    char** argv
 ) : _idleEvents( false ),
     _closeReceived( false )
 {
+    ::glutInit(&argc, argv);
+
     // FIXME: need some way of getting argc, argv to glutInit
     ::glutInitDisplayMode(
         GLUT_RGB | GLUT_DEPTH | GLUT_DOUBLE

@@ -151,8 +151,9 @@ GLUI_Panel& GfxGLWindowGLUI::Imp::getPanel( PanelID id ) {
 
 GfxGLWindowGLUI::GfxGLWindowGLUI(
     const GfxConfig& config,
-    const String& title
-) : GfxGLWindowGLUT( config, title ),
+    const String& title, 
+    int argc, char** argv
+) : GfxGLWindowGLUT( config, title, argc, argv ),
     _imp( new Imp )
 {
     _imp->_glui = GLUI_Master.create_glui_subwindow(
