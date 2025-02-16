@@ -1,3 +1,9 @@
+This is a fully functional freecloth port which has been tested on Windows 10 x64 machine on MS Visual Studio 2019. This port includes all dependencies so you should be able to compile and run the application without any issues. Just open the freeglut.sln Visual 
+Studio project and then run the clothApp. If everything goes well, you should see this window.
+
+/////////////////////////////////
+// Original readme starts here //
+///////////////////////////////////////////////////////////
 Freecloth
 http://freecloth.enigmati.ca
 
